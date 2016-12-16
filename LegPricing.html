@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<title>Leg Price</title>
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                <tr>
+                    <th colspan="8">
+                        <div class="priceculater clearfix col-sm-4 col-md-3 col-lg-2" style="display: inline-block">
+                          <div class="dropdown">
+                            <div class=" dropdown-toggle" id="PricedropdownMenu" data-toggle="dropdown" aria-haspopup="true"  style="display: inline-block; " aria-expanded="true">
+                              <span style="text-align:20px">Price</span>
+                              <a href="#" style="margin-left: 10px" ><span class="glyphicon glyphicon-chevron-down"></span></a>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="PricedropdownMenu">
+                              <li><a href="#">Amount</a></li>
+                              <li><a href="#">Objects</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 col-md-7 col-lg-9" style="display: inline-block">
+                        </div>
+                        <div class="col-sm-3 col-md-2 col-lg-1" style="text-align: right; display: inline-block">
+                          <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+                        </div>
+                      </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td colspan="8">
+                      <div class="currencybar clearfix col-sm-5 col-md-4 col-lg-3" style="display: inline-block">
+                        <div class="dropdown" style="display: inline-block">
+                          <span style="margin-right: 10px"><strong>CURRENCY</strong></span>
+                           <button id="dLabel" type="button" data-toggle="dropdown" class="btn" aria-haspopup="true" style="display: inline-block" aria-expanded="false">
+                            <span>EUR<span>
+                            <span class="caret" style="margin-left:10px"></span>
+                          </Button>
+                          <ul class="dropdown-menu" aria-labelledby="currencydropdownMenu">
+                            <li><a href="#">Dollor</a></li>
+                            <li><a href="#">Pound</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 col-md-4 col-lg-6" style="display: inline-block">
+                      </div>
+                      <dv class="col-sm-5 col-md-4 col-lg-3" style="display: inline-block; text-align: right">
+                        <span style="margin-right: 10px"><strong>AMOUNT ARE</strong></span>
+                      </div>
+                      <div class="amountbar clearfix " style="display: inline-block">
+                        <div class="dropdown" style="display: inline-block">
+                           <button id="dLabel" type="button" data-toggle="dropdown" class="btn" aria-haspopup="true" aria-expanded="false">
+                            <span>Tax Inclusive</span>
+                            <span class="caret" style="margin-left:5px"></span>
+                          </Button>
+                          <ul class="dropdown-menu" aria-labelledby="dollordropdownMenu">
+                            <li><a href="#">Tax including</a></li>
+                            <li><a href="#">Tax including</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="info" colspan="8">
+                    <div class="col-sm-6 col-lg-4">
+                      <span style="margin-right:10px">LEG PRICING</span>
+                      <button type="button" class="btn btn-info" >LFMN > LFPB</button>
+                    </div>
+                      <div class="col-sm-6 col-lg-5">
+                          <span >AB.CD / Positioning Flight / 3 Crew / Flight Time 04:00 / Overnight 0</span>
+                      </div>
+                      <div class="col-sm-6 col-lg-3" style="text-align: right;">
+                        <span style="margin-right:20px">0.00</span>
+                        <a href="#" ><span class="glyphicon glyphicon-chevron-down"></span></a>
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="info" colspan="8">
+                    <div class="col-sm-6 col-lg-4">
+                      <span style="margin-right:10px">LEG PRICING</span>
+                      <button type="button" class="btn btn-info" >LFMN > LFPB</button>
+                    </div>
+                      <div class="col-sm-6 col-lg-5">
+                          <span >AB.CD / Occupied / 3 PAX / 3 Crew / Flight Time 04:00 / Overnight 0</span>
+                      </div>
+                      <div class="col-sm-6 col-lg-3" style="text-align: right;">
+                        <span style="margin-right:20px"></span>
+                        <a href="#" ><span class="glyphicon glyphicon-chevron-up"></span></a>
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                      <span style="margin-right:10px">PRICING TEMPLATE</span>
+                      <div class="btn-group" style="display: inline-block">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="margin-right:20px"> 00-Brokers/Agencies (EUR)</span>
+                             <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="info">
+                  <td colspan="8">
+                    <div class="col-sm-2 col-lg-2">
+                      <span>DESCRIPTION</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>UNIT</span>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <span>UNIT PRICE</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>DISC %</span>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                      <span>ACCOUNT CODE</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>TAX RATE</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>AMOUNT</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span></span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>Per Hour/FT Scheduled(Adjusted)</td>
+                    <td>992.00</td>
+                    <td>1.999,999,999,00</td>
+                    <td>12.5%</td>
+                    <td></td>
+                    <td>Swiss VAT 8%</td>
+                    <td>650.00</td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Per Passenger (UUWW VIP Lounge)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1,200.00</td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Per Overnight</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>00000000000</td>
+                    <td></td>
+                    <td>0.00</td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Per Landing</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>870.00</td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr id="total">
+                    <td >THIS LEG TOTAL</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                      <div id="addrow"><span  class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span><b>ADD NEW LINE</b></div>
+                     </td>
+                </tr>
+                <tr>
+                  <td class="info" colspan="8">
+                    <div class="col-sm-6 col-lg-4">
+                      <span style="margin-right:10px">LEG PRICING</span>
+                      <button type="button" class="btn btn-info" >LFMN > LFPB</button>
+                    </div>
+                      <div class="col-sm-6 col-lg-5">
+                          <span >AB.CD / Positioning Flight / 3 Crew / Flight Time 04:00 / Overnight 0</span>
+                      </div>
+                      <div class="col-sm-6 col-lg-3" style="text-align: right;">
+                        <span style="margin-right:20px">0.00</span>
+                        <a href="#" ><span class="glyphicon glyphicon-chevron-down"></span></a>
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="info" colspan="8">
+                    <div class="col-sm-6 col-lg-4">
+                      <span style="margin-right:10px">LEG PRICING</span>
+                      <button type="button" class="btn btn-info" >LFMN > LFPB</button>
+                    </div>
+                      <div class="col-sm-6 col-lg-5">
+                          <span>Total Flight Time 16:00 / Total Overnight 0<</span>
+                      </div>
+                      <div class="col-sm-6 col-lg-3" style="text-align: right">
+                        <span style="margin-right:20px"></span>
+                        <a href="#" ><span class="glyphicon glyphicon-chevron-up"></span></a>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="info">
+                  <td colspan="8">
+                    <div class="col-sm-2 col-lg-2">
+                      <span>DESCRIPTION</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>UNIT</span>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <span>UNIT PRICE</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>DISC %</span>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                      <span>ACCOUNT CODE</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>TAX RATE</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span>AMOUNT</span>
+                    </div>
+                    <div class="col-sm-1 col-lg-1">
+                      <span></span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>Custom Pricing</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Dolar Amit</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Ipsim Charge</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Additional Fees</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Dolar Amit</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#" ><span class="glyphicon glyphicon-option-vertical"></span></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>

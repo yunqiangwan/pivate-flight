@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" href="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+
+    <div id="left-sidebar-wrapper">
+        <div class="leftsidebar-brand">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <img src="images/trump.jpeg" height="50px" width="50px" class="img-rounded"/>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#"><img src="images/taylor.jpeg" height="50px" width="50px" class="img-rounded"/></a></li>
+                    <li><a href="#"><img src="images/john.png" height="50px" width="50px" class="img-rounded"/></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="left-sidebar-nav">
+            <li><a href="#"><span> <i class="glyphicon glyphicon-home"></i></span></a></li>
+            <li><a href="#"><span> <i class="fa fa-plane" style="font-size: 24px" ></i></span></a></li>
+            <li><a href="#"><span> <i class="fa fa-calendar" style="font-size: 24px"></i></span></a></li>
+            <li><a href="#"><span> <i class="fa fa fa-building" style="font-size: 24px"></i></span></a></li>
+            <li><a href="#"><span> <i class="fa fa-user" style="font-size: 24px"></i></span></a></li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="content-breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="#">ACCOUNTS</a></li>
+                <li><a href="#">SELECTED ACCOUNT NAME</a></li>
+                <li><a href="#">DETAILS & SETTINGS</a></li>
+                <li class="active">JOHN SMITH</li>
+            </ol>
+        </div>
+
+        <div class="content-content" >
+            <div class="content-head">
+                <div class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">JOHN SMITH</a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <button class="btn btn-danger navbar-btn">save</button>
+                            <button class="btn navbar-btn"><span class="glyphicon glyphicon-minus" ></span></button>
+                            <button class="btn navbar-btn"><span class="glyphicon glyphicon-remove" ></span></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-body">
+                <form>
+                    <div id="content-sidebar" class="col-md-4 col-lg-3">
+                        <ul class="nav .nav-stacked">
+                            <li role="presentation" class="active"><a href="#">Personal &amp; Account
+                                Details</a></li>
+                            <li role="presentation"><a href="#">Passports/Visas</a></li>
+                            <li role="presentation"><a href="#">Relationships</a></li>
+                            <li role="presentation"><a href="#">Preferences</a></li>
+                            <li role="presentation"><a href="#">Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="content-wrapper" class="col-md-8 col-lg-9">
+                        <div class="content-details">
+                            <div id="personal-details">
+                                <label class="control-label" id="personaldetail" >PERSONAL DETAILS</label>
+                            </div>
+                            <div id="name-group">
+                                <div class="col-md-4 col-lg-4">
+                                    <label >LAST NAME</label>
+                                    <input class="form-control" id="lastname" type="text" placeholder="Input your Last Name">
+                                </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <label >FIRST NAME</label>
+                                    <input class="form-control" id="firstname" type="text" placeholder="Input your First Name">
+                                </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <label >MIDDLE NAME</label>
+                                    <input class="form-control " id="middlename" type="text" placeholder="Input your Middle Name">
+                                </div>
+                            </div>
+                            <div id="info-group">
+                                <div class="col-md-8 col-lg-8">
+                                    <div class="social-group" style="margin-top: 5px">
+                                        <div class="col-md-6 col-lg-6">
+                                            <label>SALUTATION</label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="salutationdropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Mr
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="salutationdropdownMenu">
+                                                    <li><a href="#">Mr</a></li>
+                                                    <li><a href="#">Mis</a></li>
+                                                    <li><a href="#">Miss</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label >PREFIX </label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="prefixdropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Mr
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="prefixdropdownMenu">
+                                                    <li><a href="#">Mr</a></li>
+                                                    <li><a href="#">Mis</a></li>
+                                                    <li><a href="#">Miss</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="date-group" style="margin-top: 10px">
+                                        <div class="col-md-5 col-lg-5" >
+                                            <label>BIRTHDAY</label>
+                                            <div class="form-group">
+                                                <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    $(function () {
+                                                        $('#datetimepicker1').datetimepicker();
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3">
+                                            <label>ALERT DAYS</label>
+                                            <input class="form-control input-sm" id="alertday" type="text" placeholder="30">
+                                        </div>
+                                        <div class="col-md-4 col-lg-4">
+                                            <label>STATUS</label>
+                                            <div class="dropdown" style="width: 100%">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="statusdropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Active
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="statusdropdownMenu">
+                                                    <li><a href="#">Active</a></li>
+                                                    <li><a href="#">Passive</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-group" style="margin-top: 10px">
+                                        <div class="col-md-12">
+                                            <label>IS THIS CONTACT A PASSAGER?</label>
+                                                <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input data-toggle="toggle" type="checkbox">
+                                                </label>
+                                            </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="image-group">
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="photo-group">
+                                        <div style="margin-top: 5px; margin-bottom: 5px">
+                                            <label>PHOTO</label>
+                                        </div>
+                                        <div style="margin-top: 5px; margin-bottom: 5px">
+                                            <label><img id="image-content" src="images/trump.jpeg"  alt="personal photo" width="240px" height="240px" ></label>
+                                        </div>
+                                        <div class="btn btn-group" style="margin-top: 5px; margin-bottom: 5px">
+                                            <button type="button" id="remove" class="col-md-4 col-lg-4" ng-click="">REMOVE</button>
+                                            <button type="button" id="changeimage" class="col-md-8 col-lg-8">CHANGE IMAGE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--right Sidebar -->
+    <div id="right-sidebar-wrapper">
+        <div class="sidebar-brand">
+            <a href="#"><span><i class="glyphicon glyphicon-th"></i></span> </a>
+        </div>
+        <ul class="right-sidebar-nav">
+            <li>
+                <a href="#"><span><i class="fa fa-list-alt" style="font-size: 24px"></i></span> </a>
+            </li>
+            <li>
+                <a href="#"><span> <i class="fa fa-handshake-o" style="font-size: 24px"></i></span></a>
+            </li>
+            <li>
+                <a href="#"><span><i class="glyphicon glyphicon-cloud" ></i></span></a>
+            </li>
+            <li>
+                <a href="#"><span><i class="fa fa-comment" style="font-size: 24px"></i></span> </a>
+            </li>
+            <li>
+                <a href="#"><span>  <i class="fa fa-bell" style="font-size: 24px"></i></span></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- /#wrapper -->
+
+</body>
+</html>
